@@ -51,6 +51,20 @@ li {
         background-color: #3356ff;
         color: #fff; }
 
+.articles {
+  background-image: url(https://blued.blog/wp-content/uploads/2021/08/CABECERA-scaled-1.jpg);
+    background-image-background-position: center center;
+    background-image-background-repeat: no-repeat;
+    background-image-background-size: cover;
+  content: "";
+    content-position: absolute;
+    content-display: block;
+    content-left: 0;
+    content-bottom: 0;
+    content-right: 0;
+    content-background-image: linear-gradient(0deg, rgba(89, 68, 248, 0.5), rgba(55, 5, 255, 0.1));
+    content-height: 100%; }
+
 .footer-nav {
   padding-bottom: 3.6rem; }
   .footer-nav .nw_txt {
