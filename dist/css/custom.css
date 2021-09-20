@@ -33,29 +33,38 @@ li {
   color: #EEEEEE; }
 
 .navbar {
-  padding-top: 5rem; }
+  padding-top: 5em;
+  padding-bottom: 5em; }
   .navbar .navbar-brand {
     width: 28.4rem; }
-  .navbar .nav-item {
-    margin-right: 1rem; }
-    .navbar .nav-item:last-child {
-      margin-right: 0; }
-    .navbar .nav-item .nav-link {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      color: #3356ff;
-      background-color: #fff;
-      border-radius: 2em;
-      padding: 0 1em; }
+  .navbar .navbar-nav {
+    margin-top: 2em; }
+    @media (min-width: 992px) {
+      .navbar .navbar-nav {
+        margin-top: 0; } }
+  @media (min-width: 992px) {
+    .navbar .nav-item {
+      margin-right: 1rem; } }
+  .navbar .nav-item:last-child {
+    margin-right: 0; }
+  .navbar .nav-item .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #3356ff;
+    text-align: right;
+    padding-left: 1em;
+    padding-right: 0; }
+    @media (min-width: 992px) {
+      .navbar .nav-item .nav-link {
+        background-color: #fff;
+        border-radius: 2em;
+        padding-right: 1em; } }
+    @media (min-width: 992px) {
       .navbar .nav-item .nav-link.active, .navbar .nav-item .nav-link:hover {
         background-color: #3356ff;
-        color: #fff; }
+        color: #fff; } }
 
 .articles {
-  background-image: url(https://blued.blog/wp-content/uploads/2021/08/CABECERA-scaled-1.jpg);
-    background-image-background-position: center center;
-    background-image-background-repeat: no-repeat;
-    background-image-background-size: cover;
   content: "";
     content-position: absolute;
     content-display: block;
@@ -66,7 +75,8 @@ li {
     content-height: 100%; }
 
 .footer-nav {
-  padding-bottom: 3.6rem; }
+  padding-top: 4em;
+  padding-bottom: 4em; }
   .footer-nav .nw_txt {
     font-size: 3.6rem;
     line-height: 5rem;
