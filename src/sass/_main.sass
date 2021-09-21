@@ -2,7 +2,9 @@
 
 
 html
-	font-size: 62.5%
+	font-size: 54.25%
+	@media (min-width: $xl)
+		font-size: 62.5%
 
 body
 	font-family: 'Montserrat', sans-serif
@@ -130,6 +132,9 @@ li,
 			height: 2em
 			border: 1px solid #fff
 			border-radius: 1em
+			&:hover, &:active
+				background-color: #fff
+				color: $black-1
 			span
 				display: none
 .separator
@@ -152,6 +157,7 @@ li,
 	.article_content
 		background-color: #fff
 		padding: 3em
+		border-top: 0.5em solid $blue
 		.alignment
 			text-align: center
 	.h1,
@@ -196,6 +202,86 @@ li,
 		&:active
 			background-color: $blue
 			border: 1px solid $blue
+
+	//OWL carousel styles overwrite
+
+	// owl
+	.my-nav.disabled
+	.my-nav .owl-prev,
+	.my-nav .owl-next,
+		cursor: pointer
+		-webkit-user-select: none
+		-khtml-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+	.my-nav button.owl-prev,
+	.my-nav button.owl-next
+		background: none
+		color: inherit
+		border: none
+		padding: 0 !important
+		font: inherit
+
+	// theme
+	.my-nav
+		margin-top: 10px
+		text-align: center
+		-webkit-tap-highlight-color: transparent
+	.my-nav [class*='owl-']
+		color: #FFF
+		font-size: 14px
+		margin: 5px
+		padding: 4px 7px
+		background: #D6D6D6
+		display: inline-block
+		cursor: pointer
+		border-radius: 3px
+		.my-nav [class*='owl-']:hover 
+			background: #869791
+			color: #FFF
+			text-decoration: none
+	.my-nav .disabled 
+		opacity: 0.5
+		cursor: default
+
+	.my-nav.disabled + .owl-dots
+		margin-top: 10px
+
+	// my styles
+	.my-nav-wrapper
+		position: relative
+	.my-nav
+		margin-top: 10px
+		text-align: center
+		-webkit-tap-highlight-color: transparent
+		position: absolute
+		top: 45%
+		transform: translateY(-50%)
+		@media (max-width: $md)
+			display: none
+	.my-nav button.owl-next,
+	.my-nav button.owl-prev
+		font-size: 3em
+		height: 2em
+		width: 2em
+		border: 1px solid #fff
+		border-radius: 1.5em
+		&:hover, &:active
+			background-color: #fff
+			color: $black-1
+	.my-nav button.owl-next.disabled,
+	.my-nav button.owl-prev.disabled
+		&:hover
+			background-color: $black-1
+			color: #fff
+	.owl-dots
+		margin-top: 8em
+	.owl-theme .owl-dots .owl-dot span
+		height: 2em
+		width: 2em
+	.owl-theme .owl-dots .active span
+		background-color: #fff
 			
 #contact
 	margin-top: 5em
@@ -254,18 +340,18 @@ li,
 
 
 	//background-image: url(https://blued.blog/wp-content/uploads/2021/08/CABECERA-scaled-1.jpg)
-    //background-position: center center
-    //background-repeat: no-repeat
-    //background-size: cover
+		//background-position: center center
+		//background-repeat: no-repeat
+		//background-size: cover
 //
 	//content: ''
-    //position: absolute
-    //display: block
-    //left: 0
-    //bottom: 0
-    //right: 0
-    //background-image: linear-gradient(0deg, rgba(89,68,248,0.5), rgba(55,5,255,0.1))
-    //height: 100%
+		//position: absolute
+		//display: block
+		//left: 0
+		//bottom: 0
+		//right: 0
+		//background-image: linear-gradient(0deg, rgba(89,68,248,0.5), rgba(55,5,255,0.1))
+		//height: 100%
 .footer-nav
 	padding-top: 4em
 	padding-bottom: 4em

@@ -38,13 +38,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
       responsiveClass:true,
       dots: true,
       nav:true,
+      navContainer: '.my-nav',
       responsive:{
           0:{
               items:1,
               nav:false
           },
           768:{
-              items:2
+              items:2,
+              nav:false
           },
           1200:{
               items:3,
