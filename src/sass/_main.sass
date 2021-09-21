@@ -78,27 +78,34 @@ li,
 
 #hero
 	font-size: 80%
-	@media (min-width: $md)
+	@media (min-width: $lg)
 		margin-top: 5em
 		margin-right: 3em
 		margin-bottom: 5em
 		margin-left: -4em
 	.container-fluid
 		max-width: 1920px
-	#hero_news,
-	#hero_article_imgwrap,
-	#hero_article_content,
-		padding: 0
 	#hero_news
+		padding: 0
+		@media (max-width: $lg)
+			height: 40vw
 		.hero_news-img
 			width: 100%
-			@media (min-width: $md)
+			@media (min-width: $lg)
 				margin-left: 1em
+	#hero_article
+		//@media (max-width: $lg)
+		//	position: absolute
+		//	top: 50%
+		//	transform: translateY(-50%)
+
 	#article_imgwrap
 		overflow: hidden
-		@media (min-width: $md)
+		border-radius: 3em 3em 0 0
+		@media (min-width: $lg)
 			border-radius: 3em 0 0 3em
 	.article
+		height: 100%
 		.article-img
 			//width: 100%
 			height: 100%
@@ -167,6 +174,8 @@ li,
 		background-color: #fff
 		padding: 3em
 		border-top: 0.5em solid $blue
+		@media (min-width: $lg) and (max-width: $xl) 
+			font-size: 115.75% //font-size reset
 		.alignment
 			text-align: center
 	.h1,
@@ -349,6 +358,7 @@ li,
 
 
 .footer-nav
+	font-size: 115.75% //font-size reset
 	padding-top: 4em
 	padding-bottom: 4em
 	.fn-block_01
@@ -371,4 +381,4 @@ li,
 	.store-item
 		margin-left: 1rem
 	.store-img
-		max-height: 5rem
+		max-height: 50px

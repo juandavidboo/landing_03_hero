@@ -75,7 +75,7 @@ li {
 
 #hero {
   font-size: 80%; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     #hero {
       margin-top: 5em;
       margin-right: 3em;
@@ -83,24 +83,28 @@ li {
       margin-left: -4em; } }
   #hero .container-fluid {
     max-width: 1920px; }
-  #hero #hero_news,
-  #hero #hero_article_imgwrap,
-  #hero #hero_article_content {
+  #hero #hero_news {
     padding: 0; }
-  #hero #hero_news .hero_news-img {
-    width: 100%; }
-    @media (min-width: 768px) {
-      #hero #hero_news .hero_news-img {
-        margin-left: 1em; } }
+    @media (max-width: 992px) {
+      #hero #hero_news {
+        height: 40vw; } }
+    #hero #hero_news .hero_news-img {
+      width: 100%; }
+      @media (min-width: 992px) {
+        #hero #hero_news .hero_news-img {
+          margin-left: 1em; } }
   #hero #article_imgwrap {
-    overflow: hidden; }
-    @media (min-width: 768px) {
+    overflow: hidden;
+    border-radius: 3em 3em 0 0; }
+    @media (min-width: 992px) {
       #hero #article_imgwrap {
         border-radius: 3em 0 0 3em; } }
-  #hero .article .article-img {
-    height: 100%;
-    margin-left: 50%;
-    transform: translateX(-50%); }
+  #hero .article {
+    height: 100%; }
+    #hero .article .article-img {
+      height: 100%;
+      margin-left: 50%;
+      transform: translateX(-50%); }
   #hero #article_content {
     padding: 5em 4em 13em 4em;
     background-color: #1e1e1e;
@@ -165,6 +169,9 @@ li {
     background-color: #fff;
     padding: 3em;
     border-top: 0.5em solid #3356ff; }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      #articles .article_content {
+        font-size: 115.75%; } }
     #articles .article_content .alignment {
       text-align: center; }
   #articles .h1,
@@ -335,6 +342,7 @@ li {
     padding-bottom: 0.6em; }
 
 .footer-nav {
+  font-size: 115.75%;
   padding-top: 4em;
   padding-bottom: 4em; }
   .footer-nav .fn-block_01 {
@@ -358,4 +366,4 @@ li {
   .footer-nav .store-item {
     margin-left: 1rem; }
   .footer-nav .store-img {
-    max-height: 5rem; }
+    max-height: 50px; }
