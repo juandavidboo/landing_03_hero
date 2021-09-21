@@ -85,22 +85,22 @@ li {
     #hero #hero_news .hero_news-img {
       margin-left: 1em; } }
 
-#hero #hero_article_imgwrap {
+#hero #article_imgwrap {
   overflow: hidden; }
   @media (min-width: 768px) {
-    #hero #hero_article_imgwrap {
+    #hero #article_imgwrap {
       border-radius: 3em 0 0 3em; } }
 
-#hero .hero_article .hero_article-img {
+#hero .article .article-img {
   height: 100%;
   margin-left: 50%;
   transform: translateX(-50%); }
 
-#hero #hero_article_content {
+#hero #article_content {
   padding: 5em 4em 13em 4em;
   background-color: #1e1e1e;
   position: relative; }
-  #hero #hero_article_content .tag {
+  #hero #article_content .tag {
     font-size: 3em;
     line-height: 1em;
     font-weight: 600;
@@ -111,16 +111,16 @@ li {
     margin-right: 0.5em;
     border: 1px solid #fff;
     border-radius: 0.5em; }
-  #hero #hero_article_content .h1 {
+  #hero #article_content .h1 {
     font-size: 4em;
     margin-bottom: 1em; }
-    #hero #hero_article_content .h1 small {
+    #hero #article_content .h1 small {
       font-size: 1em;
       font-weight: 400;
       color: #EEEEEE; }
-  #hero #hero_article_content .abstract {
+  #hero #article_content .abstract {
     font-size: 2.4em; }
-  #hero #hero_article_content .read_more {
+  #hero #article_content .read_more {
     font-size: 3em;
     line-height: 2em;
     text-align: center;
@@ -133,6 +133,8 @@ li {
     height: 2em;
     border: 1px solid #fff;
     border-radius: 1em; }
+    #hero #article_content .read_more span {
+      display: none; }
 
 .separator {
   height: 1px; }
@@ -142,6 +144,9 @@ li {
   margin-bottom: 5em; }
   #articles .container-fluid {
     max-width: 1920px; }
+  #articles .article {
+    border-radius: 3em;
+    overflow: hidden; }
   #articles .article_imgwrap {
     overflow: hidden; }
     #articles .article_imgwrap .article-img {
@@ -153,7 +158,7 @@ li {
     padding: 3em; }
     #articles .article_content .alignment {
       text-align: center; }
-  #articles .h2,
+  #articles .h1,
   #articles .read_more {
     color: #181818; }
   #articles .tag {
@@ -168,10 +173,14 @@ li {
     margin-right: 0.5em;
     border: 1px solid #3356ff;
     border-radius: 0.5em; }
-  #articles .h2 {
+  #articles .h1 {
+    font-size: 2em;
     text-align: center;
     min-height: 4.8em;
     margin-top: 1.2em; }
+    #articles .h1 small {
+      font-size: 1em;
+      font-weight: 400; }
   #articles .read_more {
     cursor: pointer;
     font-size: 1.2em;
@@ -226,6 +235,19 @@ li {
     #contact .btn-contact::placeholder {
       text-transform: uppercase;
       font-size: 1em; }
+  #contact .btn-contact {
+    color: #fff;
+    font-size: 2.7em;
+    font-weight: 600;
+    line-height: 2em;
+    text-transform: uppercase;
+    background-color: #3356ff;
+    border: 1px solid #3356ff;
+    border-radius: 0.5em;
+    padding: 0 0.5em; }
+    #contact .btn-contact:hover, #contact .btn-contact:active {
+      background-color: #4e4ddb;
+      border: 1px solid #4e4ddb; }
   #contact #textareaMensaje {
     line-height: 2em;
     padding-top: 0.6em;

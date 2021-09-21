@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     $('.owl-carousel').owlCarousel({
       loop:true,
-      margin:30,
+      margin:20,
       responsiveClass:true,
       dots: true,
       nav:true,
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               items:1,
               nav:false
           },
-          576:{
+          768:{
               items:2
           },
           1200:{
