@@ -64,14 +64,19 @@ li {
         background-color: #3356ff;
         color: #fff; } }
 
-#hero #hero_news .hero_news-img {
-  width: 100%; }
+#hero #hero_news,
+#hero #hero_art_01,
+#hero #hero_art_01 {
+  padding: 0; }
 
-#hero .hero_art .hero_art-img {
+#hero #hero_news .hero_news-img {
   width: 100%; }
 
 #hero #hero_art_02 {
   background-color: #1e1e1e; }
+
+#hero .hero_art .hero_art-img {
+  width: 100%; }
 
 .articles {
   background-image: url(https://blued.blog/wp-content/uploads/2021/08/CABECERA-scaled-1.jpg);
