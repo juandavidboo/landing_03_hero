@@ -67,33 +67,98 @@ li,
 					color: #fff
 
 #hero
+	@media (min-width: $md)
+		margin-top: 5em
+		margin-right: 3em
+		margin-bottom: 5em
+		margin-left: -4em
+	.container-fluid
+		max-width: 1920px
 	#hero_news,
-	#hero_art_01,
-	#hero_art_01,
+	#hero_article_imgwrap,
+	#hero_article_content,
 		padding: 0
 	#hero_news
 		.hero_news-img
 			width: 100%
-	#hero_art_01
-	#hero_art_02
+			@media (min-width: $md)
+				margin-left: 1em
+	#hero_article_imgwrap
+		overflow: hidden
+		@media (min-width: $md)
+			border-radius: 3em 0 0 3em
+	.hero_article
+		.hero_article-img
+			//width: 100%
+			height: 100%
+			margin-left: 50%
+			transform: translateX(-50%)	
+	#hero_article_content
+		padding: 5em 4em 13em 4em
 		background-color: $black-2
-	.hero_art
-		.hero_art-img
-			width: 100%
-.articles
-	background-image: url(https://blued.blog/wp-content/uploads/2021/08/CABECERA-scaled-1.jpg)
-    background-position: center center
-    background-repeat: no-repeat
-    background-size: cover
+		position: relative
+		.tag
+			font-size: 3em
+			line-height: 1em
+			font-weight: 600
+			text-transform: uppercase
+			display: inline-block
+			padding: 1.5rem
+			margin-bottom: 4rem
+			margin-right: 2rem
+			border: 1px solid #fff
+			border-radius: 0.5em
+		.h1
+			font-size: 4em
+			margin-bottom: 1em
+			small
+				font-size: 1em
+				font-weight: 400
+				color: $white
+		.abstract
+			font-size: 2.4em
+		.read_more
+			font-size: 3em
+			text-align: center
+			text-decoration: none
+			line-height: 2em
+			position: absolute
+			bottom: 1.66em
+			right: 1.33em
+			display: block
+			width: 2em
+			height: 2em
+			border: 1px solid #fff
+			border-radius: 1em
+.separator
+	height: 1px
+#articles
+	@media (min-width: $md)
+		margin-top: 5em
+		margin-bottom: 5em
+	.container-fluid
+		max-width: 1920px
+	.article
+	.article_imgwrap
+		overflow: hidden
+		.article-img
+			margin-left: 50%
+			transform: translateX(-50%)	
 
-	content: ''
-    position: absolute
-    display: block
-    left: 0
-    bottom: 0
-    right: 0
-    background-image: linear-gradient(0deg, rgba(89,68,248,0.5), rgba(55,5,255,0.1))
-    height: 100%
+
+	//background-image: url(https://blued.blog/wp-content/uploads/2021/08/CABECERA-scaled-1.jpg)
+    //background-position: center center
+    //background-repeat: no-repeat
+    //background-size: cover
+//
+	//content: ''
+    //position: absolute
+    //display: block
+    //left: 0
+    //bottom: 0
+    //right: 0
+    //background-image: linear-gradient(0deg, rgba(89,68,248,0.5), rgba(55,5,255,0.1))
+    //height: 100%
 .footer-nav
 	padding-top: 4em
 	padding-bottom: 4em

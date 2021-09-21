@@ -64,33 +64,92 @@ li {
         background-color: #3356ff;
         color: #fff; } }
 
+@media (min-width: 768px) {
+  #hero {
+    margin-top: 5em;
+    margin-right: 3em;
+    margin-bottom: 5em;
+    margin-left: -4em; } }
+
+#hero .container-fluid {
+  max-width: 1920px; }
+
 #hero #hero_news,
-#hero #hero_art_01,
-#hero #hero_art_01 {
+#hero #hero_article_imgwrap,
+#hero #hero_article_content {
   padding: 0; }
 
 #hero #hero_news .hero_news-img {
   width: 100%; }
+  @media (min-width: 768px) {
+    #hero #hero_news .hero_news-img {
+      margin-left: 1em; } }
 
-#hero #hero_art_02 {
-  background-color: #1e1e1e; }
+#hero #hero_article_imgwrap {
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    #hero #hero_article_imgwrap {
+      border-radius: 3em 0 0 3em; } }
 
-#hero .hero_art .hero_art-img {
-  width: 100%; }
+#hero .hero_article .hero_article-img {
+  height: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%); }
 
-.articles {
-  background-image: url(https://blued.blog/wp-content/uploads/2021/08/CABECERA-scaled-1.jpg);
-    background-image-background-position: center center;
-    background-image-background-repeat: no-repeat;
-    background-image-background-size: cover;
-  content: "";
-    content-position: absolute;
-    content-display: block;
-    content-left: 0;
-    content-bottom: 0;
-    content-right: 0;
-    content-background-image: linear-gradient(0deg, rgba(89, 68, 248, 0.5), rgba(55, 5, 255, 0.1));
-    content-height: 100%; }
+#hero #hero_article_content {
+  padding: 5em 4em 13em 4em;
+  background-color: #1e1e1e;
+  position: relative; }
+  #hero #hero_article_content .tag {
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1.5rem;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+    border: 1px solid #fff;
+    border-radius: 0.5em; }
+  #hero #hero_article_content .h1 {
+    font-size: 4em;
+    margin-bottom: 1em; }
+    #hero #hero_article_content .h1 small {
+      font-size: 1em;
+      font-weight: 400;
+      color: #EEEEEE; }
+  #hero #hero_article_content .abstract {
+    font-size: 2.4em; }
+  #hero #hero_article_content .read_more {
+    font-size: 3em;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2em;
+    position: absolute;
+    bottom: 1.66em;
+    right: 1.33em;
+    display: block;
+    width: 2em;
+    height: 2em;
+    border: 1px solid #fff;
+    border-radius: 1em; }
+
+.separator {
+  height: 1px; }
+
+@media (min-width: 768px) {
+  #articles {
+    margin-top: 5em;
+    margin-bottom: 5em; } }
+
+#articles .container-fluid {
+  max-width: 1920px; }
+
+#articles .article_imgwrap {
+  overflow: hidden; }
+  #articles .article_imgwrap .article-img {
+    margin-left: 50%;
+    transform: translateX(-50%); }
 
 .footer-nav {
   padding-top: 4em;
