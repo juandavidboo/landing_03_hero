@@ -31,7 +31,34 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // loading content on viewport
   window.addEventListener("load", function(){
 
-
+    
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:30,
+      responsiveClass:true,
+      dots: true,
+      nav:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:false
+          },
+          576:{
+              items:2
+          },
+          1200:{
+              items:3,
+              loop:false,
+              
+          },
+          1400:{
+              items:4,
+              loop:false,
+              
+          }
+        }
+    })
+    
 
 
 

@@ -103,9 +103,9 @@ li,
 			font-weight: 600
 			text-transform: uppercase
 			display: inline-block
-			padding: 1.5rem
-			margin-bottom: 4rem
-			margin-right: 2rem
+			padding: 0.5em
+			margin-bottom: 1.33em
+			margin-right: 0.5em
 			border: 1px solid #fff
 			border-radius: 0.5em
 		.h1
@@ -119,9 +119,9 @@ li,
 			font-size: 2.4em
 		.read_more
 			font-size: 3em
+			line-height: 2em
 			text-align: center
 			text-decoration: none
-			line-height: 2em
 			position: absolute
 			bottom: 1.66em
 			right: 1.33em
@@ -133,9 +133,9 @@ li,
 .separator
 	height: 1px
 #articles
-	@media (min-width: $md)
-		margin-top: 5em
-		margin-bottom: 5em
+	//@media (min-width: $md)
+	margin-top: 5em
+	margin-bottom: 5em
 	.container-fluid
 		max-width: 1920px
 	.article
@@ -143,7 +143,77 @@ li,
 		overflow: hidden
 		.article-img
 			margin-left: 50%
-			transform: translateX(-50%)	
+			transform: translateX(-50%)
+			width: auto
+	.article_content
+		background-color: #fff
+		padding: 3em
+		.alignment
+			text-align: center
+	.h2,
+	.read_more
+		color: $black-1
+	.tag
+		font-size: 1.2em
+		font-weight: 600
+		line-height: 1em
+		text-transform: uppercase
+		color: $blue
+		display: inline-block
+		padding: 0.5em
+		margin-bottom: 0.5em
+		margin-right: 0.5em
+		border: 1px solid $blue
+		border-radius: 0.5em
+	.h2
+		//font-size: 1.5em
+		text-align: center
+		min-height: 4.8em
+		margin-top: 1.2em
+	.read_more
+		cursor: pointer
+		font-size: 1.2em
+		font-weight: 600
+		line-height: 1em
+		text-decoration: none
+		text-transform: uppercase
+		color: $white
+		background-color: $black-1
+		display: inline-block
+		padding: 0.6em
+		margin-bottom: 0.5em
+		margin-right: 0.5em
+		border: 1px solid $black-1
+		border-radius: 0.5em
+		&:hover,
+		&:active
+			background-color: $blue
+			border: 1px solid $blue
+			
+#contact
+	margin-top: 5em
+	margin-bottom: 5em
+	.form-border
+		border: 1px solid #fff
+		border-radius: 3em
+		padding: 4em
+	.h1
+		text-transform: uppercase
+		font-size: 3.6em
+		font-weight: 500
+		margin-bottom: 1em
+	.form-label
+		display: none
+	.form-control
+		color: $white
+		background-color: transparent
+		font-size: 1.8em
+		line-height: 1em
+		padding-top: 0
+		padding-bottom: 0
+		&::placeholder
+			text-transform: uppercase
+			font-size: 1em
 
 
 	//background-image: url(https://blued.blog/wp-content/uploads/2021/08/CABECERA-scaled-1.jpg)
