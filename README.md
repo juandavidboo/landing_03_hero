@@ -1,6 +1,6 @@
 # Blog landing template
 
-Blog landing. The hero module displays a featured article and it's followed by a list carousel displaying a smaller preview for other articles. It handles images of different formats and sizes in articles.
+_Blued_. Blog landing. The hero module displays a featured article and it's followed by a list carousel displaying a smaller preview for other articles. It handles images of different formats and sizes in articles.
 
 ---
 ## Install
